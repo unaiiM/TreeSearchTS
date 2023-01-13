@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "es6", /*Specify ECMAScript target version*/
+        "rootDir": "src",/*ts source direcotry*/
+        "moduleResolution" : "node",
+        "outDir": "out" /*where to compile javascript files*/
+    }
+}
