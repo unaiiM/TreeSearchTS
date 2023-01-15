@@ -180,34 +180,7 @@ export default class Tree extends EventEmitter {
             };
 
             let content : string = await request(options, struct.protocol);
-
-            /*let content : string = await new Promise(async (resolv, reject) => {
-
-                let data : string = ""; 
-                let struct : UrlStruct = new Url(url).digest();
-                let options : RequestOptions = {
-                    host : <string> struct.host,
-                    port : (!struct.port) ? 443 : struct.port,
-                    path : (!struct.path) ? '/' : struct.path,
-                    query : struct.query,
-                    method : "GET",
-                    headers : this.headers
-                };
-
-                await request(options);
-    
-                let req : any = https.request(<object> options, (res) => {
-
-                    res.on("data", (buff : Buffer) => data += buff.toString());
-                    res.on("error", (err : string)  : void => this.throwError(err));
-                    res.on("end", () : void => resolv(data));
-
-                });
-
-                req.end();
-
-            });*/
- 
+            
             this.emit("done", url, content);
             
             let extracted : string[] = this.extract(content);
