@@ -6,12 +6,12 @@ First create a folder named out, install required dependences with "npm install"
 ## Example
 Tree example:
 
-node out/index.js -u https://idk.com/
+  node out/index.js -u https://idk.com/
 
 Search tree example:
 
-node out/index.js -u https://idk.com/ -q "hello"
+  node out/index.js -u https://idk.com/ -q "hello"
 
 Set headers with -h:
 
-node out/index.js -u https://idk.com/ -h "Cookies: abcde" -h "Some-other-header: value"
+  node out/index.js -u https://idk.com/ -h "Cookies: abcde" -h "Some-other-header: value"
