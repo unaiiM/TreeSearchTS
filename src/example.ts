@@ -1,5 +1,5 @@
 import { CONFIG, Option, throwError } from "./lib/config.js";
-import Tree from "./src/tree.js";
+import Tree from "./index.js";
 
 const URL : string = <string> CONFIG.url;
 const query : string | undefined = <string | undefined> CONFIG.query;
