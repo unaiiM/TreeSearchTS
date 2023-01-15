@@ -1,13 +1,3 @@
-/*
-    CONSTANTS
-*/
-const ARGV = process.argv;
-var CONFIG : Config = getConfig(ARGV);
-
-/*
-    INTERFACES
-*/
-
 export type Option = string | object | number | undefined;
 
 export interface Config {
@@ -16,9 +6,8 @@ export interface Config {
     headers : Option
 };
 
-/* 
-    FUNCTIONS
-*/
+const ARGV = process.argv;
+var CONFIG : Config = getConfig(ARGV);
 
 export function throwError(error : string) : void {
 
