@@ -1,4 +1,4 @@
-import Url, { UrlStruct }from "./url.js";
+import Url, { UrlStruct } from "./url.js";
 import { EventEmitter } from "events";
 import * as https from 'https';
 import * as http from 'http';
